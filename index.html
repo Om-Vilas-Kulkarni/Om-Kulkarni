@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Kulkarni</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/finallogo.svg" type="image/png">
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onscroll="checkmyscroll()">
+    <header class="header">
+        <nav id="navbar">
+            <div>
+                <a href="">
+                     <img src="/assets/finallogo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="mylinks">
+                <ul>
+                    <li class="navlinks active" onclick='activateme(0)'><a href="#home">Home</li></a>
+                    <li class="navlinks" onclick='activateme(1)'><a href="#about">About Me</a></li>
+                    <li class="navlinks" onclick='activateme(2)'><a href="#experience">Experience</a></li>
+                    <li class="navlinks" onclick='activateme(3)'><a href="#skills">Skills</a></li>
+                    <li class="navlinks" onclick='activateme(4)'><a href="#projects">Projects</a></li>
+                    <li class="navlinks" onclick='activateme(5)'><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div id='hamburger' class="hamburger" onclick="togglebtn()">
+                <i class="fa-solid fa-bars"></i>
+            </div>     
+        </nav>
+    </header>
+    <div id="smallnav" class="smallnav">
+        <ul>
+            <li class="smalllinks active" onclick='activateme(0),togglebtn(0)'><a href="#home"></i> Home</li></a>
+            <li class="smalllinks" onclick='activateme(1),togglebtn(1)'><a href="#about">About Me</a></li>
+            <li class="smalllinks" onclick='activateme(2),togglebtn(2)'><a href="#experience">Experience</a></li>
+            <li class="smalllinks" onclick='activateme(3),togglebtn(3)'><a href="#skills">Skills</a></li>
+            <li class="smalllinks" onclick='activateme(4),togglebtn(4)'><a href="#projects">Projects</a></li>
+            <li class="smalllinks" onclick='activateme(5),togglebtn(5)'><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <section id="home" onmouseenter="activateme(0)">
+        <div class="herocontent">
+            <h1>Om Kulkarni</h1>
+            <p>I'm <span id="typewriter"></span></p>
+            <div class="social-links">
+                <a href="mailto:omkulkarni03030@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.instagram.com/omkulkarniii" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/in/omkulkarnii" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@GetOKed" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="responsiveimg" src="/assets/snow.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="responsiveimg" src="/assets/beach.png"  alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="responsiveimg" src="/assets/manali.png"  alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="responsiveimg" src="/assets/infi.png" alt="">
+                </div>  
+                <div class="swiper-slide">
+                    <img class="responsiveimg" src="/assets/sunset.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" onmouseenter="activateme(1)">
+      <h2>About Me</h2>
+      <div class="abtcontainer">
+        <div class="abtimgcontainer">
+            <img src="/assets/abtme.jpeg" alt="">
+        </div>
+        <div class="abtcontent">
+            <div>
+                <h3 id="profession"></h3>
+                <p class="abtp">Hello! I'm Om. As a B.E Computer Science Engineer, I've build my strong foundations in Python, AI/ML and Web Technologies. In addition, I'm an Astrophile with hands on experience in space-tech and ground station systems.</p>
+            </div>
+            <hr>
+            <div>
+                <h3>Bio</h3>
+                    <div class="pgrid1">
+                        <p class="elements"><i class="fa-solid fa-user"></i> <span>Om Vilas Kulkarni</span></p>
+                        <p class="elements"><i class="fa-solid fa-phone"></i> <span>+91 9284492505</span></p>
+                        <p class="elements"><i class="fa-solid fa-cake-candles"></i> <span>30<sup>th</sup> May</span></p>
+                        <p class="elements"><i class="fa-solid fa-location-dot"></i> <span>Mumbai, Maharashtra, India</span></p>
+                        <p class="elements"><i class="fa-solid fa-envelope"></i> <span>omkulkarni03030@gmail.com</span></p>
+                    </div>
+            </div>
+               <hr>
+                <div>
+                    <h3>Education</h3>
+                    <div class="pgrid2">
+                        <div>
+                            
+                            <p class="elements"><i class="fa-solid fa-school"></i> <span>Kilbil St.Joseph's High School</span></p>
+                            <p class="elements"><i class="fa-solid fa-angle-down"></i> <span>SSC</span></p>
+                            <p class="elements"><i class="fa-solid fa-trophy"></i> <span>90.80%</span></p>
+                        </div>
+                        <div>
+                            <p class="elements"><i class="fa-solid fa-building"></i> <span><abbr></abbr>R.Y.K Junior Science College</span></p>
+                            <p class="elements"><i class="fa-solid fa-angle-down"></i> <span>HSC</span></p>
+                            <p class="elements"><i class="fa-solid fa-trophy"></i> <span>89.67%</span></p>
+                        </div>
+                        <div>
+                            <p class="elements"><i class="fa-solid fa-graduation-cap"></i> <span>Atharva College of Engineering</span></p>
+                            <p class="elements"><i class="fa-solid fa-angle-down"></i> <span>B.E Computer Engineering</span></p>
+                            <p class="elements"><i class="fa-solid fa-trophy"></i> <span>9.02 CGPI</span></p>
+                        </div>
+                    </div>
+                </div>
+           
+            <div class="plinks">
+                <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a> 
+                <a href="https://in.linkedin.com/in/omkulkarnii" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a> 
+                <a href="https://www.youtube.com/@GetOKed" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a> 
+                <a href="" target="_blank"><i class="fa-solid fa-file"></i> Resume</a> 
+            </div> 
+            <div class="plinks2 ">
+                <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><i class="fa-brands fa-github"></i></a> 
+                <a href="https://in.linkedin.com/in/omkulkarnii" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> 
+                <a href="https://www.youtube.com/@GetOKed" target="_blank"><i class="fa-brands fa-youtube"></i></a> 
+                <a href="" target="_blank"><i class="fa-solid fa-file"></i></a> 
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" onmouseenter="activateme(2)">
+        <h2>Experience</h2>
+        <section class="timeline">
+            <div class="timeline-container">
+                <div class="timeline-item left">
+                <div class="content">
+                    <div>
+                        <div class="company">
+                            <h3>Kesari Tours</h3>
+                            <img id="expimg1" src="/assets/kesari_logo.png" alt="Kesari Tours">
+                        </div>
+                          <h4>IT Intern</h4>
+                          <h5><span>Jul 2025 - Present</span></h5>
+                          <span class="span2">Tech Stack: HTML, CSS, JS & Lighthouse.</span>
+                          <p>Working on adding new features and debugging, improving the website's overall performance.</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="company">
+                        <h3>National Remote Sensing Centre, ISRO</h3>
+                        <img id ="expimg2" src="/assets/isro.png" alt="Kesari Tours">
+                    </div>
+                        <h4>Project Intern</h4>
+                        <h5><span>Dec 2024 - Feb 2025</span></h5>
+                        <span class="span2">Tech Stack: Flask, Python, HTML, CSS & JS</span>
+                        <p>Developed an Flask-based web application to control, configure and automate the mechanisms of 6 antennas system, for efficient signal routing using Raspberry Pi 5.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="company">
+                        <h3>Google - AICTE Eduskills</h3>
+                        <img id="expimg3" src="/assets/aicte.png" alt="Kesari Tours">
+                    </div>
+                        <h4>AI/ML Intern</h4>
+                        <h5><span>Jul 2024 - Sep 2024</span></h5>
+                        <span class="span2">Tech Stack: HTML, CSS, JS & Lighthouse.</span>
+                        <p>Studied about various ML algorithms such as Linear Regressions, KNN, SVM, Decision Tree, Random Forest and developed 'Heart Guardian - A Heart Disease Prediction Model.'</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="company">
+                        <h3>SYNC Intern's</h3>
+                        <img id="expimg4" src="/assets/sync_intern.jpeg" alt="Kesari Tours">
+                    </div>
+                        <h4>Web Development Intern</h4>
+                        <h5><span>Jul 2025 - Present</span></h5>
+                        <span class="span2">Tech Stack: HTML, CSS & JS.</span>
+                        <p>Designed and developed multiple responsive websites using core web technologies. Received LOR for my exceptional performance.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="skills" onmouseenter="activateme(3)">
+        <h2>Skills</h2>
+        <div class="skillcontainer">
+            <div class="skillcontent">
+                <div class="skill">
+                    <img src="/assets/html.png" alt="HTML">
+                    <caption>HTML</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/42/1/css-3-logo-png_seeklogo-426083.png" alt="CSS">
+                    <caption>CSS</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/33/1/javascript-logo-png_seeklogo-330541.png" alt="JS">
+                    <caption>JavaScript</caption>
+                </div> 
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png" alt="Tailwind CSS">
+                    <caption>Tailwind</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/38/1/bootstrap-5-logo-png_seeklogo-386607.png" alt="Bootstrap">
+                    <caption>Bootstrap</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/27/1/react-logo-png_seeklogo-273845.png" alt="ReactJS">
+                    <caption>ReactJS</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/27/1/node-js-logo-png_seeklogo-273749.png" alt="NodeJS">
+                    <caption>NodeJS</caption>
+                </div>
+                <div class="skill"> 
+                    <img src="https://images.seeklogo.com/logo-png/27/1/python-logo-png_seeklogo-273830.png" alt="Python">
+                    <caption>Python</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmD38KsMgEwahtWc_Nfs5ZVktP9dBc36MUZA&s" alt="Flask">
+                    <caption>Flask</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/42/1/fastapi-logo-png_seeklogo-425420.png" alt="FastAPI">
+                    <caption>FastAPI</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/39/2/numpy-logo-png_seeklogo-398690.png" alt="Numpy">
+                    <caption>Numpy</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/48/1/pandas-icon-logo-png_seeklogo-483545.png" alt="Pandas">
+                    <caption>Pandas</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJdFxiyv_9H5_493bYFWEiU95t6TWNOkatA&s" alt="scikitlearn">
+                    <caption>ScikitLearn</caption>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" onmouseenter="activateme(4)">
+        <h2>Projects</h2>
+        <div class="mygallery">
+            <div class="myprojects">
+                <img src="/assets/project1.png" alt="DigiPark">
+                <div id="projectlinks" class="projectlinks">
+                    <h4>DigiPark</h4>
+                    <p>DigiPark is an online parking ticket system made to digitalize the parking system to reduce paperwork hassle, go cashless and save time.</p>
+                    <div class="projecticons">
+                        <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><h5><i class="fa-brands fa-github"></i></h5></a>
+                        <a href="https://github.com/Om-Vilas-Kulkarni/DigiPark--Online-Parking-Ticket-System" target="_blank"><h5><i class="fa-solid fa-code"></i></h5></a>
+                        <a href="https://om-vilas-kulkarni.github.io/DigiPark--Online-Parking-Ticket-System/" target="_blank"><h5><i class="fa-solid fa-arrow-up-right-from-square"></i></h5></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="myprojects">
+                <img src="/assets/dictionary.png" alt="Dictionary App">
+                <div id="projectlinks" class="projectlinks">
+                    <h4>Dictionary App</h4>
+                    <p>An online web dictionary app made to ease the work of browsing meanings of words from a single page application along with their pronunciations.</p>
+                    <div class="projecticons">
+                        <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><h5><i class="fa-brands fa-github"></i></h5></a>
+                        <a href="https://github.com/Om-Vilas-Kulkarni/Dictionary-Web-App" target="_blank"><h5><i class="fa-solid fa-code"></i></h5></a>
+                        <a href="https://om-vilas-kulkarni.github.io/Dictionary-Web-App/" target="_blank"><h5><i class="fa-solid fa-arrow-up-right-from-square"></i></h5></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="myprojects">
+                <img src="/assets/WeatherApp.png" alt="Weather App">
+                <div id="projectlinks" class="projectlinks">
+                    <h4>Weather App</h4>
+                    <p>A weather app that shows the current approximate temperature, climate, precipitation, humidity and wind speed of the given city.</p>
+                    <div class="projecticons">
+                        <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><h5><i class="fa-brands fa-github"></i></h5></a>
+                        <a href="https://github.com/Om-Vilas-Kulkarni/Weather-App" target="_blank"><h5><i class="fa-solid fa-code"></i></h5></a>
+                        <a href="https://om-vilas-kulkarni.github.io/Weather-App/" target="_blank"><h5><i class="fa-solid fa-arrow-up-right-from-square"></i></h5></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="myprojects">
+                <img src="/assets/Heart Guardian.png" alt="Heart Guardian">
+                <div id="projectlinks" class="projectlinks">
+                    <h4>Heart Guardian</h4>
+                    <p>Heart Guardian is a personal healthcare AI assistant for heart disease prediction. A scikit-learn based ML prediction model.</p>
+                    <div class="projecticons">
+                        <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><h5><i class="fa-brands fa-github"></i></h5></a>
+                        <a href="https://github.com/Om-Vilas-Kulkarni/Heart-Guardian---Heart-Disease-Prediction-Model" target="_blank"><h5><i class="fa-solid fa-code"></i></h5></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="myprojects">
+                <img src="/assets/Music Player.png" alt="Music Player">
+                <div id="projectlinks" class="projectlinks">
+                    <h4>Music Player</h4>
+                    <p>A Music Player developed to understand audio controls and responsive design of website. It allows users to play, pause, change, and control volume for audio tracks.</p>
+                    <div class="projecticons">
+                        <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><h5><i class="fa-brands fa-github"></i></h5></a>
+                        <a href="https://github.com/Om-Vilas-Kulkarni/Music-Player" target="_blank"><h5><i class="fa-solid fa-code"></i></h5></a>
+                        <a href="https://om-vilas-kulkarni.github.io/Music-Player/" target="_blank"><h5><i class="fa-solid fa-arrow-up-right-from-square"></i></h5></a>
+                    </div>
+                    
+                </div>
+            </div> 
+            <div class="myprojects" >
+                <img src="/assets/FoxAudio.png" alt="FoxAudio">
+                <div id="projectlinks" class="projectlinks">
+                    <h4>FoxAudio</h4>
+                    <p>FoxAudio is a responsive product landing page showcasing different headphones, their features and pricing in modern UI.</p>
+                    <div class="projecticons">
+                        <a href="https://github.com/Om-Vilas-Kulkarni" target="_blank"><h5><i class="fa-brands fa-github"></i></h5></a>
+                        <a href="https://github.com/Om-Vilas-Kulkarni/Task1-Product-Landing-Page" target="_blank"><h5><i class="fa-solid fa-code"></i></h5></a>
+                        <a href="https://om-vilas-kulkarni.github.io/Task1-Product-Landing-Page/" target="_blank"><h5><i class="fa-solid fa-arrow-up-right-from-square"></i></h5></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact" onmouseenter="activateme(5)">
+      <h2>Contact Me</h2>
+        <div class="contactinfo">
+            <div class="contactdetails">
+                <div class="maininfo">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Mumbai, Maharashtra, India</p>
+                    </div>
+                </div>
+                <div class="maininfo">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Mail</h4>
+                        <a href="mailto:omkulkarni03030@gmail.com"><p>omkulkarni03030@gmail.com</p></a>
+                    </div>
+                </div>
+                <div class="maininfo">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Call</h4>
+                        <a href="tel:+919284492505"><p>+91 9284492505</p></a>
+                    </div>
+                </div>
+                <div class="maininfo">
+                    <div>
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d48948.339849465796!2d72.79766288755074!3d18.958403922643534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!3m2!1d18.9581934!2d72.8320729!4m5!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!3m2!1d18.9581934!2d72.8320729!5e0!3m2!1sen!2sin!4v1753867124876!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="contactform">
+                <form onsubmit="success(event)"> 
+                    <div>
+                         <label>
+                            <h4>Name<sup>*</sup></h4>
+                            <input type="text" placeholder="John Doe" required>
+                        </label>
+                    </div>
+                    <div>
+                         <label>
+                            <h4>Email<sup>*</sup></h4>
+                            <input type="email" placeholder="example@gmail.com" required>
+                        </label>
+                    </div>
+                    <div>
+                         <label>
+                            <h4>Message<sup>*</sup></h4>
+                            <textarea cols="30" rows="10" placeholder="Type Your Message.." required></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send" class="submitbtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2025 Om Kulkarni</p>
+            <p>All Rights Reserved</p>
+        </div>
+    </footer>
+        <div id="musiccontainer">
+            <i id="mymusic" class="fa-solid fa-play mymusic" onclick="playmymusic()"></i>
+        </div>
+        <audio id="myaudio" loop>   
+            <source src="/assets/audios/Free me.mp3" type="audio/mp3">
+        </audio>
+       
+    <div id="scrollup" class="scrollup">
+        <a href="#home"> <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Typewrite JS -->
+<script src="https://cdn.jsdelivr.net/npm/typewriter-effect@latest/dist/core.js"></script>
+
+<script src="script.js"></script>
+</body>
+
+</html> 
