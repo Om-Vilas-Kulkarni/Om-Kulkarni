@@ -230,6 +230,7 @@ nav div img{
     text-decoration-color: red;
     text-underline-offset: 10px;
     text-decoration-line:underline;
+    font-weight: 600;
 }
 .social-links{
     margin:20px 0px;
