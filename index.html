@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Om Kulkarni – Web Developer, Python Developer, AI/ML Enthusiast. Explore my portfolio and recent projects.">
     <title>Om Kulkarni</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -97,10 +98,10 @@
                 <h3>Bio</h3>
                     <div class="pgrid1">
                         <p class="elements"><i class="fa-solid fa-user"></i> <span>Om Vilas Kulkarni</span></p>
-                        <p class="elements"><i class="fa-solid fa-phone"></i> <span>+91 9284492505</span></p>
+                        <p class="elements"><i class="fa-solid fa-phone"></i> <a href="tel:+919284492505"><span>+91 9284492505</span></a></p>
                         <p class="elements"><i class="fa-solid fa-cake-candles"></i> <span>30<sup>th</sup> May</span></p>
                         <p class="elements"><i class="fa-solid fa-location-dot"></i> <span>Mumbai, Maharashtra, India</span></p>
-                        <p class="elements"><i class="fa-solid fa-envelope"></i> <span>omkulkarni03030@gmail.com</span></p>
+                        <p class="elements"><i class="fa-solid fa-envelope"></i> <a href="mailto:omkulkarni03030@gmail.com"><span>omkulkarni03030@gmail.com</span></a></p>
                     </div>
             </div>
                <hr>
@@ -144,7 +145,7 @@
 
     <section id="experience" onmouseenter="activateme(2)">
         <h2>Experience</h2>
-        <section class="timeline">
+        <div class="timeline">
             <div class="timeline-container">
                 <div class="timeline-item left">
                 <div class="content">
@@ -199,7 +200,7 @@
                         <p>Designed and developed multiple responsive websites using core web technologies. Received LOR for my exceptional performance.</p>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
 
     <section id="skills" onmouseenter="activateme(3)">
@@ -229,10 +230,30 @@
                 <div class="skill">
                     <img src="https://images.seeklogo.com/logo-png/27/1/react-logo-png_seeklogo-273845.png" alt="ReactJS">
                     <caption>ReactJS</caption>
+                </div> 
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/44/1/next-js-icon-logo-png_seeklogo-449825.png" alt="NextJS">
+                    <caption>NextJS</caption>
                 </div>
                 <div class="skill">
                     <img src="https://images.seeklogo.com/logo-png/27/1/node-js-logo-png_seeklogo-273749.png" alt="NodeJS">
                     <caption>NodeJS</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/color/512/express-js.png" alt="ExpressJS">
+                    <caption>ExpressJS</caption>
+                </div> 
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/44/1/mongodb-logo-png_seeklogo-444964.png" alt="MongoDB">
+                    <caption>MongoDB</caption>
+                </div> 
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/27/1/mysql-logo-png_seeklogo-273735.png" alt="MySQL">
+                    <caption>MySQL</caption>
+                </div>
+                <div class="skill"> 
+                    <img src="https://images.seeklogo.com/logo-png/45/1/c-language-logo-png_seeklogo-458623.png" alt="C Programming">
+                    <caption>C Language</caption>
                 </div>
                 <div class="skill"> 
                     <img src="https://images.seeklogo.com/logo-png/27/1/python-logo-png_seeklogo-273830.png" alt="Python">
@@ -257,6 +278,10 @@
                 <div class="skill">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJdFxiyv_9H5_493bYFWEiU95t6TWNOkatA&s" alt="scikitlearn">
                     <caption>ScikitLearn</caption>
+                </div> 
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/42/1/matplotlib-logo-png_seeklogo-428047.png" alt="scikitlearn">
+                    <caption>Matplotlib</caption>
                 </div>
             </div>
         </div>
@@ -383,23 +408,27 @@
                     <div>
                          <label>
                             <h4>Name<sup>*</sup></h4>
-                            <input type="text" placeholder="John Doe" required>
+                            <input id="myusername" type="text" placeholder="John Doe" required onchange="checkinput(1)" onblur="checkinput(1)">
+                            <p id="check1">Please enter your name</p>
                         </label>
                     </div>
                     <div>
                          <label>
                             <h4>Email<sup>*</sup></h4>
-                            <input type="email" placeholder="example@gmail.com" required>
+                            <input id="useremail" type="email" placeholder="example@gmail.com" required onchange="checkinput(2)" onblur="checkinput(2)">
+                            <p id="check2">Please enter your email</p>
+                            <p id="check4">Please enter valid email with '@' and '.com/.in/etc'.</p>
                         </label>
                     </div>
                     <div>
                          <label>
                             <h4>Message<sup>*</sup></h4>
-                            <textarea cols="30" rows="10" placeholder="Type Your Message.." required></textarea>
+                            <textarea id="usermessage" cols="30" rows="10" placeholder="Type Your Message.." required onchange="checkinput(3)" onblur="checkinput(3)"></textarea>
+                            <p id="check3">Please enter your message</p>
                         </label>
                     </div>
                     <div>
-                        <input type="submit" value="Send" class="submitbtn">
+                        <input type="submit" value="Send" class="submitbtn" onclick="checkinput(1),checkinput(2),checkinput(3)">
                     </div>
                 </form>
             </div>

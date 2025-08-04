@@ -167,3 +167,42 @@ function success(event){
   window.location="";
 }   
 
+function checkinput(z){
+  if(z==1){
+    let myusername = document.getElementById('myusername');
+    if (myusername.value == ""){
+      let check1 = document.getElementById('check1');
+      check1.style.display = "inline-block";
+    }
+    else{
+      check1.style.display = "none";
+    }
+  }
+  else if(z==2){
+    let useremail = document.getElementById('useremail');
+    if (useremail.value == ""){
+      let check2 = document.getElementById('check2');
+      check2.style.display = "inline-block";
+      let check4 = document.getElementById('check4');
+      check4.style.display = "none";
+    }
+    else if (!useremail.checkValidity()){
+      check2.style.display = "none";
+      check4.style.display = "inline-block";
+    }
+    else{
+      check2.style.display = "none";
+      check4.style.display = "none";
+    }
+  }
+  else if(z==3){
+    let usermessage = document.getElementById('usermessage');
+    if (usermessage.value == ""){
+      let check3 = document.getElementById('check3');
+      check3.style.display = "inline-block";
+    }
+    else{
+      check3.style.display = "none";
+    }
+  }
+}
