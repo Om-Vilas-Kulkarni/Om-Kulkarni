@@ -225,6 +225,7 @@ nav div img{
 }
 .herocontent span{
     font-size: 35px;
+    font-weight: 400;
     color: white;
     text-decoration-line: underline;
     text-decoration-color: red;
@@ -407,6 +408,11 @@ nav div img{
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
+
+.elements span{
+  font-weight: 400;
+}
+
 .pgrid2 div{
     padding: 5px 15px 10px 0px;
 }

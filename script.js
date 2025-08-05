@@ -11,6 +11,7 @@ if(window.innerWidth < 650){
 }
 
 
+
 const app = document.getElementById('typewriter');
 
   const typewriter = new Typewriter(app, {
