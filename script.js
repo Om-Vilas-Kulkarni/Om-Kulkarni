@@ -18,7 +18,6 @@ else{
   rimg[4].src = '/assets/sunset.png';
 }
 
-
 const app = document.getElementById('typewriter');
 
   const typewriter = new Typewriter(app, {
