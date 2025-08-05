@@ -1,12 +1,12 @@
 if(window.innerWidth < 650){
   let rimg = document.getElementsByClassName('responsiveimg');
-  rimg[0].src = '/assets/rimg4.jpeg';
-  rimg[1].src = '/assets/rimg2.jpeg'
+  rimg[0].src = '/assets/rimg4.png';
+  rimg[1].src = '/assets/rimg2.png'
   rimg[1].style.objectPosition = 'bottom';
-  rimg[2].src = '/assets/rimg3.jpeg';
+  rimg[2].src = '/assets/rimg3.png';
   rimg[2].style.objectPosition = 'top';
-  rimg[3].src = '/assets/rimg1.jpeg';
-  rimg[4].src = '/assets/rsunset.jpeg';
+  rimg[3].src = '/assets/rimg1.png';
+  rimg[4].src = '/assets/rsunset.png';
   rimg[4].style.objectPosition = 'bottom left';
 }
 else{
