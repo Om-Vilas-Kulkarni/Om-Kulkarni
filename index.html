@@ -109,6 +109,7 @@
                     <h3>Education</h3>
                     <div class="pgrid2">
                         <div>
+                            
                             <p class="elements"><i class="fa-solid fa-school"></i> <span>Kilbil St.Joseph's High School</span></p>
                             <p class="elements"><i class="fa-solid fa-angle-down"></i> <span>SSC</span></p>
                             <p class="elements"><i class="fa-solid fa-trophy"></i> <span>90.80%</span></p>
@@ -275,12 +276,16 @@
                     <caption>Pandas</caption>
                 </div>
                 <div class="skill">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJdFxiyv_9H5_493bYFWEiU95t6TWNOkatA&s" alt="scikitlearn">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJdFxiyv_9H5_493bYFWEiU95t6TWNOkatA&s" alt="ScikitLearn">
                     <caption>ScikitLearn</caption>
                 </div> 
                 <div class="skill">
-                    <img src="https://images.seeklogo.com/logo-png/42/1/matplotlib-logo-png_seeklogo-428047.png" alt="scikitlearn">
+                    <img src="https://images.seeklogo.com/logo-png/42/1/matplotlib-logo-png_seeklogo-428047.png" alt="Matplotlib">
                     <caption>Matplotlib</caption>
+                </div>
+                <div class="skill">
+                    <img src="https://images.seeklogo.com/logo-png/39/1/tensorflow-logo-png_seeklogo-394548.png" alt="TensorFlow">
+                    <caption>TensorFlow</caption>
                 </div>
             </div>
         </div>
@@ -407,27 +412,27 @@
                     <div>
                          <label>
                             <h4>Name<sup>*</sup></h4>
-                            <input id="myusername" type="text" placeholder="John Doe" required onchange="checkinput(1)" onblur="checkinput(1)">
-                            <p id="check1">Please enter your name</p>
+                            <input id="myusername" type="text" placeholder="John Doe" required  oninput="checkinput(1)" onblur="checkinput(1)">
+                            <p id="check1">Name is required</p>
                         </label>
                     </div>
                     <div>
                          <label>
                             <h4>Email<sup>*</sup></h4>
-                            <input id="useremail" type="email" placeholder="example@gmail.com" required onchange="checkinput(2)" onblur="checkinput(2)">
-                            <p id="check2">Please enter your email</p>
-                            <p id="check4">Please enter valid email with '@' and '.com/.in/etc'.</p>
+                            <input id="useremail" type="email" placeholder="example@gmail.com" required oninput="checkinput(2)" onblur="checkinput(2)">
+                            <p id="check2">Email is required</p>
+                            <p id="check4">Enter valid email with '@' and '.com/.in/etc'.</p>
                         </label>
                     </div>
                     <div>
                          <label>
                             <h4>Message<sup>*</sup></h4>
-                            <textarea id="usermessage" cols="30" rows="10" placeholder="Type Your Message.." required onchange="checkinput(3)" onblur="checkinput(3)"></textarea>
-                            <p id="check3">Please enter your message</p>
+                            <textarea id="usermessage" cols="30" rows="10" placeholder="Type Your Message.." required oninput="checkinput(3)" onblur="checkinput(3)"></textarea>
+                            <p id="check3">Message is required</p>
                         </label>
                     </div>
                     <div>
-                        <input type="submit" value="Send" class="submitbtn" onclick="checkinput(1),checkinput(2),checkinput(3)">
+                        <input type="button" value="Send" id="submitbtn" class="submitbtn" onclick="checkinput(1),checkinput(2),checkinput(3), checkpoint()">
                     </div>
                 </form>
             </div>

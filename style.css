@@ -150,7 +150,7 @@ nav div img{
     align-items: center;
     justify-content: space-between;
     background-color: #050d18;
-    padding: 70px 0px 25px 0px;
+    padding: 60px 0px 55px 0px;
 }
 .smallnav ul{
     display: flex;
@@ -230,7 +230,6 @@ nav div img{
     text-decoration-color: red;
     text-underline-offset: 10px;
     text-decoration-line:underline;
-    font-weight: 400;
 }
 .social-links{
     margin:20px 0px;
@@ -403,9 +402,6 @@ nav div img{
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 15px;
-}
-.pgrid1 p span, .pgrid2 p span{
-  font-weight: 400;
 }
 .pgrid2{
     display: grid;
@@ -887,11 +883,15 @@ small{
   color: white;
 }
 
+.maininfo a:hover{
+  color: red;
+}
+
 .contactform sup{
   color: red;
 }
 .contactform h4{
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 input,textarea{
@@ -930,8 +930,9 @@ textarea{
   cursor: pointer;
   transition-duration: 0.2s;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 
 @media (max-width:1100px){
   .contactinfo{
@@ -981,8 +982,6 @@ textarea{
     padding: 8px 12px;
     border-radius: 50%;
 }
-
-
 
 /* Footer */
 footer{

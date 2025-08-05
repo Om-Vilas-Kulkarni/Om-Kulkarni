@@ -6,6 +6,8 @@ if(window.innerWidth < 650){
   rimg[2].src = '/assets/rimg3.jpeg';
   rimg[2].style.objectPosition = 'top';
   rimg[3].src = '/assets/rimg1.jpeg';
+  rimg[4].src = '/assets/rsunset.jpeg';
+  rimg[4].style.objectPosition = 'bottom left';
 }
 
 
@@ -81,10 +83,6 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 1,
-    // spaceBetween: 10,
-    // grid:{
-    //   rows:2,
-    // },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -135,13 +133,14 @@ function togglebtn(){
     count++;
     mysmallnav.style.transitionDuration ='0.5s';
     mysmallnav.style.transform = 'translateY(0%)';
-
+    document.body.style.overflowY = 'hidden';
   }
   else{
     ham.innerHTML = `<i class="fa-solid fa-bars"></i>`;
     count++;
-    mysmallnav.style.transitionDuration ='0.5s';
+    mysmallnav.style.transitionDuration ='0.5s';  
     mysmallnav.style.transform = 'translateY(-100%)';
+    document.body.style.overflowY = 'visible';  
   }
 }
 
@@ -173,36 +172,80 @@ function checkinput(z){
     if (myusername.value == ""){
       let check1 = document.getElementById('check1');
       check1.style.display = "inline-block";
+      myusername.style.outlineColor = 'red';
     }
     else{
       check1.style.display = "none";
+      myusername.style.outlineColor = '#31ac01';
     }
   }
-  else if(z==2){
+  if(z==2){
     let useremail = document.getElementById('useremail');
     if (useremail.value == ""){
       let check2 = document.getElementById('check2');
       check2.style.display = "inline-block";
       let check4 = document.getElementById('check4');
       check4.style.display = "none";
+      useremail.style.outlineColor = 'red';
     }
-    else if (!useremail.checkValidity()){
+  if(useremail.value !==""){
       check2.style.display = "none";
       check4.style.display = "inline-block";
-    }
-    else{
-      check2.style.display = "none";
-      check4.style.display = "none";
+      try{
+        let emailarray =  useremail.value.split('@');
+        let emailarray2 =  emailarray[1].split('.');
+        if(emailarray.length==2 && emailarray2[1].length>=2){
+          useremail.style.outlineColor = '#31ac01';
+          check2.style.display = "none";
+          check4.style.display = "none";
+        }
+        else{
+          useremail.style.outlineColor = 'red';
+        }
+      }
+      catch(error){
+       
+      }
+      
     }
   }
-  else if(z==3){
+  if(z==3){
     let usermessage = document.getElementById('usermessage');
     if (usermessage.value == ""){
       let check3 = document.getElementById('check3');
       check3.style.display = "inline-block";
+      usermessage.style.outlineColor = 'red';
     }
     else{
       check3.style.display = "none";
+      usermessage.style.outlineColor = '#31ac01';
     }
+  }
+ 
+  let useremail = document.getElementById('useremail');
+  if(useremail.style.outlineColor == 'rgb(49, 172, 1)'){
+    document.getElementById('submitbtn').type = "submit";
+  }
+  else if(useremail.style.outlineColor == 'red' || useremail.style.outlineColor == ''){
+    document.getElementById('submitbtn').type = "button";
+  }
+}
+
+function checkpoint(){
+  let myusername = document.getElementById('myusername');
+  let useremail = document.getElementById('useremail');
+  let usermessage = document.getElementById('usermessage');
+
+  if(myusername.value==""){
+    myusername.focus();
+  }
+  else if(useremail.value==""){
+    useremail.focus();
+  }
+  else if(usermessage.value==""){
+    usermessage.focus();
+  }
+  else{
+    useremail.focus();
   }
 }
