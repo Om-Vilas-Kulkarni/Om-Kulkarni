@@ -176,13 +176,21 @@ function success(event){
 function checkinput(z){
   if(z==1){
     let myusername = document.getElementById('myusername');
+    let check1 = document.getElementById('check1');
+    let check5 = document.getElementById('check5');
     if (myusername.value == ""){
-      let check1 = document.getElementById('check1');
       check1.style.display = "inline-block";
+      check5.style.display = "none";
+      myusername.style.outlineColor = 'red';
+    }
+    else if(myusername.value.length<2){
+      check1.style.display = "none";
+      check5.style.display = "inline-block";
       myusername.style.outlineColor = 'red';
     }
     else{
       check1.style.display = "none";
+      check5.style.display = "none";
       myusername.style.outlineColor = '#31ac01';
     }
   }
@@ -195,25 +203,47 @@ function checkinput(z){
       check4.style.display = "none";
       useremail.style.outlineColor = 'red';
     }
-  if(useremail.value !==""){
+  else if(useremail.value !==""){
       check2.style.display = "none";
       check4.style.display = "inline-block";
       try{
         let emailarray =  useremail.value.split('@');
         let emailarray2 =  emailarray[1].split('.');
-        if(emailarray.length==2 && emailarray2[1].length>=2){
-          useremail.style.outlineColor = '#31ac01';
-          check2.style.display = "none";
-          check4.style.display = "none";
+        if(emailarray2.length-1==1){
+          let emailarray3 = emailarray2[1].length;
+          if(emailarray.length-1==1 && (emailarray3>=2 && emailarray3<=3)){
+            useremail.style.outlineColor = '#31ac01';
+            check2.style.display = "none";
+            check4.style.display = "none";
+          }
+          else{
+            useremail.style.outlineColor = 'red';
+            check4.style.display = "inline-block";
+          }
         }
+
+        else if(emailarray2.length-1>1){
+          let endbefore = emailarray2[emailarray2.length-2].length;
+          let end = emailarray2[emailarray2.length-1].length;
+          if(emailarray.length-1==1 && (endbefore>=2 && endbefore<=3) && (end>=2 && end<=3)){
+            useremail.style.outlineColor = '#31ac01';
+            check2.style.display = "none";
+            check4.style.display = "none";
+          }
+          else{
+            useremail.style.outlineColor = 'red';
+            check4.style.display = "inline-block";
+          }
+        }
+
         else{
-          useremail.style.outlineColor = 'red';
+            useremail.style.outlineColor = 'red';
+            check4.style.display = "inline-block";
         }
       }
       catch(error){
        
       }
-      
     }
   }
   if(z==3){
@@ -243,10 +273,10 @@ function checkpoint(){
   let useremail = document.getElementById('useremail');
   let usermessage = document.getElementById('usermessage');
 
-  if(myusername.value==""){
+  if(myusername.value.length<2){
     myusername.focus();
   }
-  else if(useremail.value==""){
+  else if(useremail.style.outlineColor == 'red'){
     useremail.focus();
   }
   else if(usermessage.value==""){
