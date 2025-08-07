@@ -88,13 +88,32 @@ var swiper = new Swiper(".mySwiper", {
       }
     });
 
-var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 1,
-    navigation: {
+
+var swiper3 = new Swiper(".mySwiper3", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
+      },
+      breakpoints:{
+        1300:{
+          slidesPerView: 3,
+        },
+        900:{
+          slidesPerView: 2,
+        },
+        100:{
+          slidesPerView: 1,
+        }
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
+
+
 
 
 
