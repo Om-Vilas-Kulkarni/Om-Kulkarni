@@ -188,8 +188,14 @@ function playmymusic(){
 
 function success(event){
   event.preventDefault()
-  alert("Your message has been sent!");
-  window.location="";
+  document.getElementById('mymodal').style.display = "flex";
+  document.getElementById('myusername').value="";
+  document.getElementById('useremail').value="";
+  document.getElementById('usermessage').value="";
+  setTimeout(() => {
+    document.getElementById('mymodal').style.display = "none";
+    window.location="";
+  }, 4000);
 }   
 
 function checkinput(z){
