@@ -1079,7 +1079,7 @@ footer p{
 .mymodal{
   position: fixed;
   z-index: 3000;
-  top:0;
+  top:38px;
   width: 100%;
   display: none;
   flex-direction: column;

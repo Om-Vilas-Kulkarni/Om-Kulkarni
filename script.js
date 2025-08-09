@@ -1,21 +1,21 @@
 if(window.innerWidth < 650){
   let rimg = document.getElementsByClassName('responsiveimg');
-  rimg[0].src = '/assets/rimg4.png';
-  rimg[1].src = '/assets/rimg2.png'
+  rimg[0].src = '/assets/rimg4.webp';
+  rimg[1].src = '/assets/rimg2.webp'
   rimg[1].style.objectPosition = 'bottom';
-  rimg[2].src = '/assets/rimg3.png';
+  rimg[2].src = '/assets/rimg3.webp';
   rimg[2].style.objectPosition = 'top';
-  rimg[3].src = '/assets/rimg1.png';
-  rimg[4].src = '/assets/rsunset.png';
+  rimg[3].src = '/assets/rimg1.webp';
+  rimg[4].src = '/assets/rsunset.webp';
   rimg[4].style.objectPosition = 'bottom left';
 }
 else{
   let rimg = document.getElementsByClassName('responsiveimg');
-  rimg[0].src = '/assets/snow.png';
-  rimg[1].src = '/assets/beach.png';
-  rimg[2].src = '/assets/manali.png';
-  rimg[3].src = '/assets/infi.png';
-  rimg[4].src = '/assets/sunset.png';
+  rimg[0].src = '/assets/snow.webp';
+  rimg[1].src = '/assets/beach.webp';
+  rimg[2].src = '/assets/manali.webp';
+  rimg[3].src = '/assets/infi.webp';
+  rimg[4].src = '/assets/sunset.webp';
 }
 
 const app = document.getElementById('typewriter');
