@@ -194,6 +194,7 @@ function success(event){
   document.getElementById('usermessage').value="";
   setTimeout(() => {
     document.getElementById('mymodal').style.display = "none";
+    document.getElementById('mymodal').focus();
     window.location="";
   }, 4000);
 }   
