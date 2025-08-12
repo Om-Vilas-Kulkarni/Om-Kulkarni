@@ -588,6 +588,48 @@ small{
     z-index: 20;
     filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.616));
 }
+
+#expimg3{
+  animation-name: mycompanylogo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+#subexpimg3{
+   position: absolute;
+    max-width: 65px; 
+    right: -87px;
+    top:30px;
+    z-index: 20;
+}
+
+#subexpimg1{
+  position: absolute;
+    max-width: 65px; 
+    right: -87px;
+    top:30px;
+    z-index: 20;
+    animation-name: mycompanylogo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes mycompanylogo{
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{  
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 #expimg2{
     position: absolute;
     max-width: 65px; 
@@ -596,11 +638,27 @@ small{
     z-index: 20;
     background-color: rgb(0, 0, 0);
     padding: 7px;
+    border: 2px solid white;
     border-radius: 49%;
     filter: saturate(2);
-    border: 2px solid white;
     filter: drop-shadow(2px 2px 10px rgb(8, 8, 0));
 }
+
+#subexpimg2{
+  position: absolute;
+  max-width: 65px; 
+  left: -87px;
+  top:30px;
+  z-index: 20;
+  filter: saturate(2);
+  animation-name: mycompanylogo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+
 #expimg4{
     position: absolute;
     max-width: 65px; 
@@ -610,7 +668,23 @@ small{
     background-color: rgb(0, 0, 0);
     border-radius: 50%;
     filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.616));
+    border:3px solid #2d94e4;
 }
+
+#subexpimg4{
+  position: absolute;
+  max-width: 65px; 
+  left: -87px;
+  top: 30px;
+  z-index: 22;
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.616));
+  animation-name: mycompanylogo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
 
 #experience h5{
     margin: 9px 0px;
@@ -658,7 +732,7 @@ small{
     left: -20px;
     width: 100%;
   }
-  #expimg1,#expimg3,#expimg2,#expimg4{
+  #subexpimg1,#subexpimg2,#subexpimg3,#subexpimg4,#expimg1,#expimg3,#expimg2,#expimg4{
     left: -80px;
     width: 50px;
     top: 0px;
@@ -708,6 +782,7 @@ small{
     position: relative;
     background-color: transparent;
     border-radius: 10px;
+    position: relative;
 }
 
 .skill img{
@@ -720,12 +795,45 @@ small{
     filter: saturate(1.1);
 }
 
+.skillshadow{
+    position: absolute;
+    top: 72px;
+    background-color:rgba(0, 0, 0, 0.322);
+    height: 4px;
+    width: 56px;
+    border-radius: 50%;
+    animation-name: shadoweffect;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.skill .caption{
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 16px;  
+}
+
 @keyframes bounceit{
     0%,100%{
         transform: translateY(-1px);
     }
     50%{
         transform: translateY(-5px);
+    }
+}
+@keyframes shadoweffect{
+    0%{
+        width:25px;
+        opacity: 1;
+    }
+    50%{
+        width: 35px;
+        opacity: 0.5;
+    }
+    100%{
+      width: 25px;
+      opacity: 1;
     }
 }
 
