@@ -1,5 +1,5 @@
 window.addEventListener('load',function(){
-  document.getElementById('loader').style.transitionDuration = "0.5s"
+  document.getElementById('loader').style.transitionDuration = "0.3s"
   document.getElementById("loader").style.opacity = "0";
   document.getElementById("loader").style.zIndex = "-10";
   document.body.style.overflowY="visible";
@@ -24,6 +24,23 @@ else{
   rimg[3].src = '/assets/infi.webp';
   rimg[4].src = '/assets/sunset.webp';
 }
+
+const apphero = document.getElementById('herotypewriter');
+
+  const herotypewriter = new Typewriter(apphero, {
+    loop: true,
+    delay: 75,
+  });
+
+  herotypewriter
+    .typeString("Loading...")
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString("Almost there...")
+    .pauseFor(1000)
+    .deleteAll()
+    .start();
+
 
 const app = document.getElementById('typewriter');
 

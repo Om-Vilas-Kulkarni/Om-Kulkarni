@@ -12,7 +12,10 @@ body{
 }
 
 #loader{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   z-index:1001;
   height: 100vh;
@@ -20,23 +23,26 @@ body{
   font-family: sans-serif;
   font-weight: bold;
   opacity: 1;
-  background-color: black;
-  font-size: 9rem ;
+  background-color: #050d18;
+  font-size: 1.5rem ;
 
+  div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
   p{
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 15px;
   }
+
   span {
     display: inline-block;
     animation: pulse 0.4s alternate infinite ease-in-out;
     color: #fff;
     font-weight: 600;
-   
-
+    text-shadow: 1px 1px 20px black;
     &:nth-child(odd) {
       animation-delay: 0.4s;
     }
@@ -50,36 +56,6 @@ body{
   }
 }
 
-@media(max-width:1400px){
-  #loader{
-      font-size: 7rem;
-
-  }
-}
-@media(max-width:1095px){
-  #loader{
-      font-size: 5rem;
-
-  }
-}
-@media(max-width:810px){
-  #loader{
-      font-size: 4rem;
-
-  }
-}
-@media(max-width:650px){
-  #loader{
-      font-size: 2.8rem;
-
-  }
-}
-@media(max-width:440px){
-  #loader{
-      font-size: 1.9rem;
-
-  }
-}
 
 
 
