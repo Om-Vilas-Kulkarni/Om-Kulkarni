@@ -1,3 +1,9 @@
+window.addEventListener('load',function(){
+  document.getElementById('loader').style.transitionDuration = "0.5s"
+  document.getElementById("loader").style.opacity = "0";
+  document.body.style.overflowY="visible";
+})
+
 if(window.innerWidth < 650){
   let rimg = document.getElementsByClassName('responsiveimg');
   rimg[0].src = '/assets/rimg4.webp';
