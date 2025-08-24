@@ -1,6 +1,7 @@
 window.addEventListener('load',function(){
   document.getElementById('loader').style.transitionDuration = "0.5s"
   document.getElementById("loader").style.opacity = "0";
+  document.getElementById("loader").style.zIndex = "-10";
   document.body.style.overflowY="visible";
 })
 
