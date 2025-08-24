@@ -6,9 +6,10 @@
     scroll-behavior: smooth;
 }
 body{
+   overflow-y: hidden;
    overflow-x: hidden;
    position: relative;
-   overflow-y: hidden;
+  
 }
 
 #loader{
@@ -17,7 +18,7 @@ body{
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index:1001;
+  z-index:5000;
   height: 100vh;
   width: 100vw;
   font-family: sans-serif;
@@ -33,7 +34,6 @@ body{
   justify-content: center;
   }
   p{
-    height: 100%;
     margin: 15px;
   }
 

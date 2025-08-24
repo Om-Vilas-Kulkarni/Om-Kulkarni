@@ -25,23 +25,6 @@ else{
   rimg[4].src = '/assets/sunset.webp';
 }
 
-const apphero = document.getElementById('herotypewriter');
-
-  const herotypewriter = new Typewriter(apphero, {
-    loop: true,
-    delay: 75,
-  });
-
-  herotypewriter
-    .typeString("Loading...")
-    .pauseFor(1000)
-    .deleteAll()
-    .typeString("Almost there...")
-    .pauseFor(1000)
-    .deleteAll()
-    .start();
-
-
 const app = document.getElementById('typewriter');
 
   const typewriter = new Typewriter(app, {
